@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/small_margin_side"
+    android:orientation="vertical"
+    tools:context="com.tlg.slidinganimationrecyclerview.activities.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sliding Animation (Countries and Capital)"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_font"
+        android:id="@+id/heaiding_tv"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/data_recycler_view"
+        android:layout_width="394dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_layout"
+        android:layout_below="@+id/heaiding_tv"
+        android:layout_marginTop="@dimen/small_margin_side"
+        android:layout_marginBottom="@dimen/medium_margin" />
+
+    <LinearLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/btn_random_animation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/small_margin_side"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:text="Random Anim"
+            android:textSize="@dimen/medium_font"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_margin_side"
+            android:layout_marginRight="@dimen/small_margin_side"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:textSize="@dimen/medium_font"
+            android:text="Normal"
+
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_reverse_anumation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_margin_side"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:text="Reverse Anim"
+            android:textSize="@dimen/medium_font"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+</RelativeLayout>
